@@ -1,16 +1,20 @@
----
-title : Tutorial Setup
-author: Phillip Alday, Douglas Bates, Reinhold Kliegl
-date  : February 17-19, 2020
----
 
-A tutorial on *Mixed Models in the Julia Programming Language* will be held February 17-19, 2020 at the Zentrum fur interdisziplinare Forschung (ZiF) at the University of Bielefeld. In preparation for this tutorial, please follow these instructions to install Julia on the computer you will be using.
+
+# Background
+
+A course on MixedModels in the Julia Programming Language will be held September 7-11, 2020 as one of four streams of the *Fourth Summer School for Statistical Methods for Linguistics and Psychology* [(SMLP2020)](https://vasishth.github.io/smlp2020/). SMLP2020 has been organized by Shravan Vasishth at the University of Potsdam, Germany, since 2017, as part of a [methods project](https://www.uni-potsdam.de/en/sfb1287/projects/infrastructure-service-training-and-central-projects/project-q.html) funded within the Collaborative Research Project *Limits of Variability in Language* [(SFB 1287)](https://www.uni-potsdam.de/en/sfb1287/index). This year this stream will be taught virtually using Zoom for daily real-time meetings.
+
+Applicants must have experience with linear mixed models and be interested in learning how to carry out such analyses with the Julia-based MixedModels package) (i.e., the analogue of the R-based lme4 package). Julia MixedModels has some significant advantages. Some of them are: (a) new and more efficient computational implementation, (b) speed — needed for, e.g., complex designs and the computation of statistical power, (c) more flexibility for selection of parsimonious mixed models, and (d) more flexibility in taking into account autocorrelations or other dependencies — typical EEG-, fMRI-based time series (under development). We do not expect profound knowledge of Julia from participants; the necessary subset of knowledge will be taught on the first two days of the course. 
+
+We do expect a readiness to install Julia and the confidence that with some basic instruction participants will be able to adapt prepared Julia scripts for their own data or to adapt some of their own lmer()-commands to the equivalent MixedModels()-commands. The course will be taught in a hybrid IDE. There is already the option to execute R chunks from within Julia, meaning one needs Julia primarily for execution of MixedModels command as replacement of lmer(). There is also an option to call Julia MixedModels from within R and process the resulting object like an lme4-object. Thus, much of pre- and postprocessing (e.g., data simulation for complex experimental designs; visualization of partial-effect interactions or shrinkage effects) can be carried out in the RStudio / R environment. 
+
+# Instructions for setup
 
 We assume that those participating in the tutorial are somewhat familiar with [`R`](https://R-project.org) and the [`RStudio`](https://rstudio.com/products/rstudio) IDE (integrated development environment).
 
 ## Installing Julia
 
-The [Julia download site](https://julialang.org/downloads/) provides binary downloads for most common operating systems. Ensure that the version you install is at least v1.3.0. By the time of the tutorial v1.4.0 may have been released - if so please install that version.
+The [Julia download site](https://julialang.org/downloads/) provides binary downloads for most common operating systems. Ensure that the version you install is v1.5.0. 
 
 ## The Julia REPL
 
@@ -37,31 +41,31 @@ For example
 julia> using InteractiveUtils, Random, Statistics
 
 julia> varinfo(Random)   # list exported functions and types
-  name                   size summary            
-  ––––––––––––––– ––––––––––– –––––––––––––––––––
-  AbstractRNG       176 bytes DataType           
-  MersenneTwister   232 bytes DataType           
-  Random          525.723 KiB Module             
-  RandomDevice      200 bytes DataType           
-  bitrand             0 bytes typeof(bitrand)    
-  rand!               0 bytes typeof(rand!)      
-  randcycle           0 bytes typeof(randcycle)  
-  randcycle!          0 bytes typeof(randcycle!) 
-  randexp             0 bytes typeof(randexp)    
-  randexp!            0 bytes typeof(randexp!)   
-  randn!              0 bytes typeof(randn!)     
-  randperm            0 bytes typeof(randperm)   
-  randperm!           0 bytes typeof(randperm!)  
-  randstring          0 bytes typeof(randstring) 
-  randsubseq          0 bytes typeof(randsubseq) 
-  randsubseq!         0 bytes typeof(randsubseq!)
-  shuffle             0 bytes typeof(shuffle)    
-  shuffle!            0 bytes typeof(shuffle!)   
+  name                   size summary                   
+  ––––––––––––––– ––––––––––– ––––––––––––––––––––––––––
+  AbstractRNG       168 bytes DataType                  
+  MersenneTwister   224 bytes DataType                  
+  Random          380.452 KiB Module                    
+  RandomDevice      184 bytes DataType                  
+  bitrand             0 bytes typeof(Random.bitrand)    
+  rand!               0 bytes typeof(Random.rand!)      
+  randcycle           0 bytes typeof(Random.randcycle)  
+  randcycle!          0 bytes typeof(Random.randcycle!) 
+  randexp             0 bytes typeof(Random.randexp)    
+  randexp!            0 bytes typeof(Random.randexp!)   
+  randn!              0 bytes typeof(Random.randn!)     
+  randperm            0 bytes typeof(Random.randperm)   
+  randperm!           0 bytes typeof(Random.randperm!)  
+  randstring          0 bytes typeof(Random.randstring) 
+  randsubseq          0 bytes typeof(Random.randsubseq) 
+  randsubseq!         0 bytes typeof(Random.randsubseq!)
+  shuffle             0 bytes typeof(Random.shuffle)    
+  shuffle!            0 bytes typeof(Random.shuffle!)   
 
 julia> varinfo(Statistics)
   name              size summary                     
   –––––––––– ––––––––––– ––––––––––––––––––––––––––––
-  Statistics 250.283 KiB Module                      
+  Statistics 220.695 KiB Module                      
   cor            0 bytes typeof(Statistics.cor)      
   cov            0 bytes typeof(Statistics.cov)      
   mean           0 bytes typeof(Statistics.mean)     
@@ -113,6 +117,5 @@ weave("README.jmd", doctype="pandoc")
 
 ## Integrated Development Environments
 
-Editing and running Julia code is supported in both the [Atom editor](https://atom.io) and [VSCode](https://code.visualstudio.com).  The Atom support is called Juno and is documented at https://junolab.github.io.  The VSCode support is documented at https://www.julia-vscode.org
+Editing and running Julia code is supported [VS Code](https://code.visualstudio.com) and documented at https://www.julia-vscode.org
 
-Either of these environments is fine for this workshop.
