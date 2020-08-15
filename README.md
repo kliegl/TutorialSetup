@@ -2,7 +2,7 @@
 
 # Background
 
-A course on MixedModels in the Julia Programming Language will be held September 7-11, 2020 as one of four streams of the *Fourth Summer School for Statistical Methods for Linguistics and Psychology* [(SMLP2020)](https://vasishth.github.io/smlp2020/). SMLP2020 has been organized by Shravan Vasishth at the University of Potsdam, Germany, since 2017, as part of a [methods project](https://www.uni-potsdam.de/en/sfb1287/projects/infrastructure-service-training-and-central-projects/project-q.html) funded within the Collaborative Research Project *Limits of Variability in Language* [(SFB 1287)](https://www.uni-potsdam.de/en/sfb1287/index). This year this stream will be taught virtually using Zoom for daily real-time meetings.
+A course on MixedModels in the Julia Programming Language will be held September 7-11, 2020 as one of four streams of the *Fourth Summer School for Statistical Methods for Linguistics and Psychology* [(SMLP2020)](https://vasishth.github.io/smlp2020/). SMLP2020 has been organized by [Shravan Vasishth](https://vasishth.github.io) at the University of Potsdam, Germany, since 2017, as part of a [methods project](https://www.uni-potsdam.de/en/sfb1287/projects/infrastructure-service-training-and-central-projects/project-q.html) funded within the Collaborative Research Project *Limits of Variability in Language* [(SFB 1287)](https://www.uni-potsdam.de/en/sfb1287/index). This year this stream will be taught virtually using Zoom for daily real-time meetings.
 
 Applicants must have experience with linear mixed models and be interested in learning how to carry out such analyses with the Julia-based MixedModels package) (i.e., the analogue of the R-based lme4 package). Julia MixedModels has some significant advantages. Some of them are: (a) new and more efficient computational implementation, (b) speed — needed for, e.g., complex designs and the computation of statistical power, (c) more flexibility for selection of parsimonious mixed models, and (d) more flexibility in taking into account autocorrelations or other dependencies — typical EEG-, fMRI-based time series (under development). We do not expect profound knowledge of Julia from participants; the necessary subset of knowledge will be taught on the first two days of the course. 
 
@@ -117,5 +117,6 @@ weave("README.jmd", doctype="pandoc")
 
 ## Integrated Development Environments
 
-Editing and running Julia code is supported [VS Code](https://code.visualstudio.com) and documented at https://www.julia-vscode.org
+Editing and running Julia code is supported [VS Code](https://code.visualstudio.com) and 
+documented at https://www.julia-vscode.org
 
