@@ -25,7 +25,7 @@ Typing certain characters as the first in an input line will change the mode of 
 | Character | Prompt | Context |
 | --------- | ------ | --------------- |
 | `?` | `help?> ` | Help mode - print help messages on functions, types, etc. |
-| `]` | `(v1.3) pkg> ` | Pkg mode - install, list, remove, etc. packages |
+| `]` | `(v1.5) pkg> ` | Pkg mode - install, list, remove, etc. packages |
 | `;` | `shell> ` | Shell mode - execute a single shell command |
 | `$` | `R> ` | R mode - requires `RCall` package installed and active |
 | `<backspace>` | `julia> ` | return to Julia mode |
