@@ -77,3 +77,5 @@ weave("README.jmd", doctype="pandoc")
 Editing and running Julia code is supported [VS Code](https://code.visualstudio.com) and 
 documented at https://www.julia-vscode.org
 
+For instructions about installing `Julia` and `VS Code` and links to introductory tutorials 
+see [Aurelio Amerio's TechyTok blog](https://techytok.com/julia-vscode/)
