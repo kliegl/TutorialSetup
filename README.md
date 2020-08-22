@@ -25,7 +25,7 @@ Typing certain characters as the first in an input line will change the mode of 
 | Character | Prompt | Context |
 | --------- | ------ | --------------- |
 | `?` | `help?> ` | Help mode - print help messages on functions, types, etc. |
-| `]` | `(v1.5) pkg> ` | Pkg mode - install, list, remove, etc. packages |
+| `]` | `(v1.3) pkg> ` | Pkg mode - install, list, remove, etc. packages |
 | `;` | `shell> ` | Shell mode - execute a single shell command |
 | `$` | `R> ` | R mode - requires `RCall` package installed and active |
 | `<backspace>` | `julia> ` | return to Julia mode |
@@ -45,7 +45,7 @@ julia> varinfo(Random)   # list exported functions and types
   ––––––––––––––– ––––––––––– ––––––––––––––––––––––––––
   AbstractRNG       168 bytes DataType                  
   MersenneTwister   224 bytes DataType                  
-  Random          380.452 KiB Module                    
+  Random          380.116 KiB Module                    
   RandomDevice      184 bytes DataType                  
   bitrand             0 bytes typeof(Random.bitrand)    
   rand!               0 bytes typeof(Random.rand!)      
@@ -121,4 +121,4 @@ Editing and running Julia code is supported [VS Code](https://code.visualstudio.
 documented at https://www.julia-vscode.org
 
 For instructions about installing `Julia` and `VS Code` and links to introductory tutorials 
-see [Aurelio Amerio's TechyTok blog](https://techytok.com/julia-vscode/).  
+see also [Aurelio Amerio's TechyTok blog](https://techytok.com/julia-vscode/).
