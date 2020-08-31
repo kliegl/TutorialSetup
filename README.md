@@ -96,6 +96,9 @@ A listing of registered Julia packages is available at https://pkg.julialang.org
 | CategoricalArrays | `factor`-like objects |
 | DataFrames | data tables with properties and capabilities like R's `data.frame` |
 | DataFramesMeta | database-like operations on data tables |
+| Gadfly | Julia graphics package inspired by ggplot2 |
+| IJulia | switch from VS Code IDE to Jupyter Notebook IDE |
+| JellyMe4 | move mixed-effect models from Julia to R for postprocessing |
 | MixedModels | fit and examine mixed-effects models |
 | PooledArrays | light-weight version of categorical arrays |
 | RCall | call R from Julia, including data transfers |
