@@ -3,6 +3,5 @@
 .Rhistory
 .RData
 .Ruserdata
-Manifest.toml
-Project.toml
-TutorialSetup.Rproj
+*.toml
+*.Rproj
